@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,5 +7,46 @@
 </head>
 <body>
     <h1>Meu portifólinho - Davi tottizadas</h1>
+    <form method="post" action="">
+        <label for="nome_completo">Nome completo:</label>
+        <input type="text" name="nome_completo" id="nome_completo" required> 
+
+        <label for="cpf">cpf:</label>
+        <input type="text" name="cpf" id="cpf" minlength="14" maxlength="14" required>
+
+        <label for="email">E-mail:</label>
+        <input type="text" name="email" id="email" required>
+
+        <label for="senha_padrao">Senha:</label>
+        <input type="text" name="senha_padrao" id="senha_padrao" required>
+
+        <label for="escolaridade">escolaridade:</label>
+        <input type="text" name="escolaridade" id="escolaridade">
+
+        <select name="escolaridade" id="escolaridade"> 
+            <option value="" selected>Informe sua escolaridade</option>
+            <option value="Ensino fundamental completo">Ensino fundamental completo</option>
+            <option value="Ensino médio completo">Ensino médio completo</option>
+            <option value="Ensino superior completo">Ensino superior completo</option>
+        </select>
+
+        <p>Informe seu sexo</p>
+        <label for="sexo">Sexo</label>
+        <input type="radio" name="sexo" id="masculino" value="Masculino">
+
+        <label for="sexo">Sexo</label>
+        <input type="radio" name="sexo" id="feminino" value="Feminino">
+
+        <label for="null">Prefiro não dizer:</label>
+        <input type="radio" name="sexo" id="null" value="Prefiro não dizer">
+        
+        <label for="termos">aceitokkkkkkj
+        <input type="checkbox" name="Termos" id="termos"> 
+
+        <label for="condicoes">aceitotamenkkkkkkkj
+        <input type="checkbox" name="Condicoes" id="condicoes">
+        </label>
+        
+    </form>
 </body>
 </html>
