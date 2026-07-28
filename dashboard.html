@@ -1,66 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Smart Control</title>
+    <title>Smart Control - Dashboard</title>
 </head>
+
 <body>
 
-    <h1>Dashboard</h1>
+    <!-- Cabeçalho -->
+    <header>
 
+        <img src="assets/images/logo.png.png" alt="Logo Smart Control" width="150">
+
+        <h1>Dashboard</h1>
+
+        <p>Bem-vindo ao sistema Smart Control.</p>
+
+    </header>
+
+    <hr>
+
+    <!-- Menu de navegação -->
     <nav>
+
         <ul>
-            <li><a href="#">Relatórios</a></li>
-            <li><a href="#">Configurações</a></li>
-            <li><a href="#">Perfil</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="cadastro.html">Cadastrar Usuário</a></li>
+            <li><a href="index.html">Sair</a></li>
         </ul>
+
     </nav>
 
-    <h2>Relatório de Acessos Recentes</h2>
+    <hr>
 
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Data</th>
-                <th>Hora</th>
-                <th>Status</th>
-            </tr>
-        </thead>
+    <!-- Conteúdo principal -->
+    <main>
 
-        <tbody>
-            <tr>
-                <td>João</td>
-                <td>23/07/2026</td>
-                <td>08:15</td>
-                <td>Ativo</td>
-            </tr>
+        <h2>Relatório de Acessos Recentes</h2>
 
-            <tr>
-                <td>Maria</td>
-                <td>23/07/2026</td>
-                <td>09:40</td>
-                <td>Inativo</td>
-            </tr>
+        <table border="1">
 
-            <tr>
-                <td>Pedro</td>
-                <td>23/07/2026</td>
-                <td>10:25</td>
-                <td>Ativo</td>
-            </tr>
-        </tbody>
-    </table>
+            <thead>
 
+                <tr>
+                    <th>Nome</th>
+                    <th>Data</th>
+                    <th>Hora</th>
+                    <th>Status</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>João</td>
+                    <td>23/07/2026</td>
+                    <td>08:15</td>
+                    <td>Ativo</td>
+                </tr>
+
+                <tr>
+                    <td>Maria</td>
+                    <td>23/07/2026</td>
+                    <td>09:40</td>
+                    <td>Inativo</td>
+                </tr>
+
+                <tr>
+                    <td>Pedro</td>
+                    <td>23/07/2026</td>
+                    <td>10:25</td>
+                    <td>Ativo</td>
+                </tr>
+
+                <tr>
+                    <td>Ana</td>
+                    <td>24/07/2026</td>
+                    <td>08:05</td>
+                    <td>Ativo</td>
+                </tr>
+
+                <tr>
+                    <td>Carlos</td>
+                    <td>24/07/2026</td>
+                    <td>09:20</td>
+                    <td>Inativo</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <br>
+
+        <h3>Links úteis</h3>
+
+        <ul>
+            <li>
+                <a href="https://pedrotech.com.br/pedrolandia/" target="_blank">
+                    Portal Pedro Landia
+                </a>
+            </li>
+
+            <li>
+                <a href="cadastro.html">
+                    Cadastrar novo usuário
+                </a>
+            </li>
+
+        </ul>
+
+    </main>
+
+    <hr>
+
+    <!-- Rodapé -->
     <footer>
-        <p>
-            Ambiente da turma:
-            <a href="https://pedrotech.com.br/pedrolandia/" target="_blank">
-                Portal Pedro Landia
-            </a>
-        </p>
+
+        <h3>Localização</h3>
+
+        <iframe
+            src="https://www.google.com/maps?q=Juiz%20de%20Fora%20MG&output=embed"
+            width="400"
+            height="250"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+
+        <p>&copy; 2026 - Smart Control</p>
+
     </footer>
 
 </body>
-</html>
+
+</html> 
