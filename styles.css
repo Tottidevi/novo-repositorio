@@ -1,0 +1,172 @@
+/* configuração geral da pag */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    background-color: #160d24;
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* area principal do login */
+main {
+    width: 380px;
+    max-width: 85%;
+
+    margin: 60px auto;
+    padding: 30px;
+
+    background-color: rgba(24, 15, 38, 0.95);
+
+    border: 1px solid #6d3bb8;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+    text-align: left;
+}
+
+/* Cabeçalhinho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 32px;
+    color: #c99cff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+header p {
+    color: #cfc2df;
+}
+
+/* Rótuloz dos campos */
+label {
+    font-weight: bold;
+    color: #ded0ef;
+}
+
+/* Campos */
+input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+
+    background-color: #241633;
+    color: #ffffff;
+
+    border: 1px solid #5f3b82;
+    border-radius: 8px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* Quando clicar no campo */
+input:focus {
+    border-color: #a76cff;
+    box-shadow: 0 0 8px rgba(167, 108, 255, 0.5);
+}
+
+/* Texto dentro dos campos */
+input::placeholder {
+    color: #8f7da2;
+}
+
+/* Botão */
+button {
+    width: 100%;
+
+    padding: 12px;
+
+    background-color: #7b3fc6;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Efeito de passar o mouse */
+button:hover {
+    background-color: #9959e8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(153, 89, 232, 0.4);
+}
+
+/* Links */
+a {
+    color: #c08cff;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Linha horizontal */
+hr {
+    border: none;
+    border-top: 1px solid #4a3261;
+} 
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+
+    color: #cfc2df;
+}
+
+/* Mapa */
+iframe {
+    border-radius: 10px;
+    border: 1px solid #6d3bb8;
+}
+
+/* Responsividade para todas as telas */
+@media (max-width: 600px) {
+
+    main {
+        width: auto;
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
