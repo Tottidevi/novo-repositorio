@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #160d24;
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    display: block;
+    margin: 20px auto 15px;
+}
+
+h1 {
+    color: #c99cff;
+    font-size: 32px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+main {
+    width: 85%;
+    margin: 50px auto;
+    padding: 30px;
+
+    background-color: rgba(24, 15, 38, 0.95);
+
+    border: 1px solid #6d3bb8;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    text-align: left;
+    margin: 0px;
+}
+
+nav a {
+    color: #c08cff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+nav a:hover {
+    color:rgb(221, 7, 157);
+    text-decoration: underline;
+
+    transition: 0.3;
+}
+
+table {
+    width: 100%;
+    margin-top: 25px;
+
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #7b3fc6;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    background-color: #241633;
+    color: white;
+
+    padding: 12px;
+    text-align: center;
+
+    border: 1px solid #5f3b82;
+}
+
+tr:hover td {
+    background-color: #332046;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+
+    color: #cfc2df;
+}
+
+iframe {
+    border-radius: 10px;
+    border: 1px solid #6d3bb8;
+}
+
+a:hover{
+    color:rgb(228, 7, 228)
+    
+}

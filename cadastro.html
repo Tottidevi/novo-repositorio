@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" href="styles.css"-->
     <title>Smart Control - Cadastro</title>
 </head>
 
@@ -108,20 +109,17 @@
 
             <br><br>
 
-            <p>Turno:</p>
+            <label for="turno">Turno:</label><br>
 
-            <input type="radio" id="manha" name="turno" value="Manhã" required>
-            <label for="manha">Manhã</label>
+            <select id="turno" name="turno" required>
 
-            <br>
+                <option value="">Selecione</option>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+                <option>Integral</option>
 
-            <input type="radio" id="tarde" name="turno" value="Tarde">
-            <label for="tarde">Tarde</label>
-
-            <br>
-
-            <input type="radio" id="noite" name="turno" value="Noite">
-            <label for="noite">Noite</label>
+            </select>
 
             <br><br>
 
@@ -130,12 +128,8 @@
             <input type="checkbox" id="relatorios" name="permissoes">
             <label for="relatorios">Visualizar Relatórios</label>
 
-            <br>
-
             <input type="checkbox" id="usuarios" name="permissoes">
             <label for="usuarios">Gerenciar Usuários</label>
-
-            <br>
 
             <input type="checkbox" id="configuracoes" name="permissoes">
             <label for="configuracoes">Alterar Configurações</label>
@@ -156,6 +150,7 @@
 
             <button type="submit">Cadastrar</button>
             <button type="reset">Limpar</button>
+    
 
         </form>
 
