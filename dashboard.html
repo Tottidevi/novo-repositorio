@@ -18,32 +18,35 @@
 
         <h1>Dashboard</h1>
 
-        <p>Bem-vindo ao sistema Smart Control.</p>
+        <nav class="navbar">
+
+            <ul class="main-menu">
+                <li><a href="dashboard.html">Dashboard</a></li>
+    
+                <li><a href="cadastro.html">Cadastrar Usuário</a></li>
+    
+                <li><a href="index.html">Sair</a></li>
+    
+                <li> <a href="#">Ajuda</a></li>
+                
+                <li><a href="#">Informações</a></li>
+            </ul>
+    
+        </nav>
 
     </header>
 
-    <hr>
 
-    <!-- Menu de navegação -->
-    <nav>
-
-        <ul>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="cadastro.html">Cadastrar Usuário</a></li>
-            <li><a href="index.html">Sair</a></li>
-        </ul>
-
-    </nav>
-
-    <hr>
-
-    <!-- Conteúdo principal -->
+    <!-- Conteudo principal -->
     <main>
         <section class="cards">
 
             <div class="card">
         
-                <span class="badge">Ativo</span>
+                <span class="badge online">
+                    <span class="dot"></span>
+                    Ativos
+                </span>
         
                 <h3>Usuários</h3>
         
@@ -53,7 +56,10 @@
         
             <div class="card">
         
-                <span class="badge">3 Alertas</span>
+                <span class="badge alertas">
+                    <span class="dot"></span>
+                    3 Alertas
+                </span>
         
                 <h3>Alertas</h3>
         
@@ -63,7 +69,10 @@
         
             <div class="card">
         
-                <span class="badge">Online</span>
+                <span class="badge online">
+                    <span class="dot"></span>
+                    Online
+                </span>
         
                 <h3>Sistema</h3>
         
@@ -132,35 +141,37 @@
         <br>
 
         <h3>Links úteis</h3>
+        
+        <nav class="links">
+            <ul>
+                <li>
+                    <a href="https://pedrotech.com.br/pedrolandia/" target="_blank">
+                        Portal Pedro Landia
+                    </a>
+                </li>
 
-        <ul>
-            <li>
-                <a href="https://pedrotech.com.br/pedrolandia/" target="_blank">
-                    Portal Pedro Landia
-                </a>
-            </li>
+                <li>
+                    <a href="cadastro.html">
+                        Cadastrar novo usuário
+                    </a>
+                </li>
 
-            <li>
-                <a href="cadastro.html">
-                    Cadastrar novo usuário
-                </a>
-            </li>
-
-        </ul>
+            </ul>
+        </nav>
 
     </main>
 
     <hr>
 
-    <!-- Rodapé -->
+    <!-- Rodasaco -->
     <footer>
 
         <h3>Localização</h3>
 
         <iframe
             src="https://www.google.com/maps?q=Juiz%20de%20Fora%20MG&output=embed"
-            width="400"
-            height="250"
+            width="700"
+            height="450"
             style="border:0;"
             loading="lazy"
             allowfullscreen>
