@@ -85,10 +85,11 @@ nav a:hover{
 }
 
 main{
+    width: 90%;
+    
+    max-width: 900px;
 
-    width: 40%;
-
-    margin:30px auto;
+    margin:auto;
 
     padding:30px;
 
@@ -164,12 +165,13 @@ footer{
 
     margin-top:30px;
 
-    padding:20px;
+    padding: auto;
 
 }
 
 iframe{
-
+    max-width: 300px;
+    
     border:1px solid #6d3bb8;
 
     border-radius:10px;
@@ -183,5 +185,27 @@ hr{
     margin:20px auto;
 
     border:1px solid #6d3bb8;
+
+}
+
+@media (max-width:768px){
+
+    main{
+        width:95%;
+    }
+
+    nav li{
+        display:block;
+        margin:10px;
+    }
+
+    img{
+        width:80px;
+        height:auto;
+    }
+
+    iframe{
+        width:100%;
+    }
 
 }
