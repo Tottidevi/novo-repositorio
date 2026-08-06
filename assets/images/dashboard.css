@@ -21,7 +21,7 @@ body {
 header {
     position: sticky;
     display: flex;
-    justify-content: flex-start;
+    justify-content: end;
     align-items: center;
     padding: 15px 3%;
     top: 0;
@@ -182,6 +182,7 @@ a:hover{
     background-color: currentColor;
 }
 
+
 @media (max-width:768px){
 
     header{
@@ -193,7 +194,7 @@ a:hover{
     }
 
     main{
-        margin-top: 220px;
+        margin-top: 240px;
         padding: 20px;
     }
 
@@ -215,10 +216,23 @@ a:hover{
     table{
         width: 80%;
         margin: 25px auto;
-        font-size: 12px;
+        font-size: 14px;
         transform: scale(1);
-        
-    .cards
-    
+    }
+
+    .cards{
+        flex-direction: column;
+        margin: 30px;
+        padding: 30px;
+        transform: scale(1);
+    }
+
+    .card {
+        width: 90%;
+    }
+
+
+    td{
+        padding: 7px;
     }
     }
