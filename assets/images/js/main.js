@@ -1,40 +1,42 @@
 const elementoSaudacao = document.querySelector("#saudacao");
+const elementoHora = document.querySelector("#hora");
+const elementoData = document.querySelector("#data");
 
-const nomeVariavel = prompt("Digite seu nome aí:");
-
-const dataAtual = new Date();
+const nomeVariavel = prompt("Digite seu nome aí:") || "Usuário";
 
 const diasSemana = [
     "Domingo",
-    "Segunda-Feira",
-    "Terça-Feira",
-    "Quarta-Feira",
-    "Quinta-Feira",
-    "Sexta-Feira",
+    "Segunda-feira",
+    "Terça-feira",
+    "Quarta-feira",
+    "Quinta-feira",
+    "Sexta-feira",
     "Sábado"
 ];
 
-const diaSemana = diasSemana[dataAtual.getDay()];
-const dia = String(dataAtual.getDate()).padStart(2, "0");
-const mes = String(dataAtual.getMonth() + 1).padStart(2, "0");
-const ano = dataAtual.getFullYear();
-const hora = String(dataAtual.getHours()).padStart(2, "0");
-const minuto = String(dataAtual.getMinutes()).padStart(2, "0");
+function atualizarRelogio() {
 
-const fusoMinutos = -dataAtual.getTimezoneOffset();
-const sinal = fusoMinutos >= 0 ? "+" : "-";
-const fusoHoras = String(
-    Math.floor(Math.abs(fusoMinutos) / 60)
-).padStart(2, "0");
-const fusoMinutosRestantes = String(
-    Math.abs(fusoMinutos) % 60
-).padStart(2, "0");
+    const agora = new Date();
 
-const fusoHorario = `${sinal}${fusoHoras}:${fusoMinutosRestantes}`;
+    const diaSemana = diasSemana[agora.getDay()];
 
-const dataFormatada = `${diaSemana}, ${dia}/${mes}/${ano} – ${hora}:${minuto} (${fusoHorario})`;
+    const dia = String(agora.getDate()).padStart(2, "0");
+    const mes = String(agora.getMonth() + 1).padStart(2, "0");
+    const ano = agora.getFullYear();
 
-elementoSaudacao.textContent = `Olá, ${nomeVariavel}! Hoje é ${dataFormatada}`;
+    const hora = String(agora.getHours()).padStart(2, "0");
+    const minuto = String(agora.getMinutes()).padStart(2, "0");
+    const segundo = String(agora.getSeconds()).padStart(2, "0");
 
-console.log("Nome:", nomeVariavel);
-console.log("Data:", dataFormatada);
+    elementoSaudacao.textContent = `Olá, ${nomeVariavel}!`;
+
+    elementoHora.textContent =
+        `${hora}:${minuto}:${segundo}`;
+
+    elementoData.textContent =
+        `${diaSemana}, ${dia}/${mes}/${ano}`;
+}
+
+atualizarRelogio();
+
+setInterval(atualizarRelogio, 1000);
